@@ -15,7 +15,7 @@ public class Board {
         this.squares = new SquareType[height][width]; //!? why do I have to write new?
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                this.squares[i][j] = SquareType.EMPTY;
+                this.squares[i][j] = SquareType.randomSquareType();
             }
         }
     }
